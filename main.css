@@ -1,0 +1,174 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.clear{
+    clear: both;
+}
+
+#main{
+
+}
+#header{
+    background-color: black;
+    height: 46px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+
+}
+#nav {
+    display: inline-block;
+}
+#nav ,.subnav{
+    list-style-type: none;
+} 
+#nav > li{
+    display: inline-block;
+
+}
+#nav li{
+    position: relative;
+}
+#nav .subnav{
+    display:none;
+    position: absolute;
+    background-color: white;
+    width: 160px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+   
+}
+#nav .subnav a{
+    color: black;
+    padding: 0 12px;
+}
+#nav .subnav li:hover a{
+    color: black;
+    background-color: #ccc;
+}
+#nav > li > a{
+    color: white;
+}
+#nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+#nav > li:hover > a{
+    background-color: #ccc;
+    color: black;
+}
+#nav > li:hover .subnav{
+    display: block;
+}
+#nav .icon-arrow{
+    font-size: 14px;
+
+}
+#header .button-search{
+    float: right;
+    padding:0 23px;
+
+}
+#header .icon-search{
+    color: white;
+    line-height: 46px;
+
+}
+#header .button-search:hover{
+    background-color: red;
+    cursor: pointer;
+}
+#slider{
+    margin-top: 46px;
+    padding-top: 50%;
+    background-color: #333;
+    background: url('ny.jpg') top center /cover no-repeat;
+    position: relative;
+}
+#slider .text-heading{
+    position: absolute;
+    bottom:47px;
+    color: white;
+    text-align: center;
+    width: 100%;
+
+
+}
+#slider .heading{
+    font-size: 24px;
+    font-weight: 400;
+
+}
+#slider .sub-heading{
+    margin-top: 25px;
+    font-size: 15px;
+    font-weight: bolder;
+
+}
+#content{
+    
+
+}
+#content .content-section{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0;
+
+}
+#content .text-heading{
+    margin: 10px 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+
+}
+#content .text-sub-heading{
+    margin: 15px 0;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+    font-size: 15px;
+
+}
+#content .text-content{
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+#content .member-list{
+    text-align: center;
+    padding: 32px 0;
+    /* overflow: hidden; */
+
+}
+#content .member-item{
+    float: left;
+    width:calc(100%/3);
+
+}
+#content .member-name{
+    text-align: center;
+   margin: 15px 0;
+
+}
+#content .member-img{
+    width: 154px;
+    border-radius: 4px;
+
+
+}
+#footer{
+
+}
